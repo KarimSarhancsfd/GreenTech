@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+  <title>GreenTech-RegestrationPage</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/greenTech-logosmaller.png" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <script src="js/GreenTech-general.js"></script>
+ <script src="js/greenTech-login-js.js"></script>
+ <script src="https://apis.google.com/js/platform.js" async defer></script>
+ <link rel="stylesheet" href="css/GreenTech-login-page.css">
+</head>
+<body>
+    <!-- Start your project here-->
+    <form class="form" onsubmit="return false" autocomplete="off">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-12">
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <img src="img/greenTech-logo.png" alt="Company Logo" class="img-fluid mb-3" style="max-width: 150px;">
+                                <h2 class="mb-4">User Registration</h2>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="text" id="register-username" class="form-control" placeholder="Enter your username" required />
+                                <label class="form-label" for="register-username">Username</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="password" id="register-password" class="form-control" placeholder="Enter your password" required />
+                                <label class="form-label" for="register-password">Password</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="email" id="register-email" class="form-control" placeholder="Enter your email" required />
+                                <label class="form-label" for="register-email">Email</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="number" id="farm-count" class="form-control" placeholder="Enter number of farms" required />
+                                <label class="form-label" for="farm-count">Number of Farms</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="text" id="farm-address" class="form-control" placeholder="Enter farm address" required />
+                                <label class="form-label" for="farm-address">Farm Address</label>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block mb-3">Register</button>
+                            <div class="text-center d-flex justify-content-center">
+                                <div class="g-signin2" data-onsuccess="onSignIn" style="border-radius: 50%; overflow: hidden;"></div>
+                            </div>
+                            <div class="text-center mt-3">
+                                <p>Already have an account? <a href="login.html">Login here</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+     <!-- End your project here-->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript.js"></script>
+</body>
+</html>
