@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+  <title>GreenTech-login-page</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/greenTech-logosmaller.png" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <script src="js/GreenTech-general.js"></script>
+ <script src="js/greenTech-login-js.js"></script>
+ <script src="https://apis.google.com/js/platform.js" async defer></script>
+ <link rel="stylesheet" href="css/GreenTech-login-page.css">
+</head>
+<body>
+    <form class="form" onsubmit="return false" autocomplete="off">
+      <div class="login-container">
+      <div class="login-box">
+        <img src="img/greenTech-logo.png" alt="Company Logo" class="company-logo">
+        <div class="form-inner">
+        <h2>User Login</h2>
+        <div class="input-wrapper">
+          <label for="login-username">Username</label>
+          <div class="input-group">
+          <span class="icon">
+            <svg viewBox="0 0 24 24">
+            <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"></path>
+            </svg>
+          </span>
+          <input type="text" id="login-username" class="form-control" placeholder="Enter your username" required />
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <label for="login-password">Password</label>
+          <div class="input-group">
+          <span class="icon">
+            <svg viewBox="0 0 24 24"></svg>
+            <path d="M12,1A11,11 0 0,1 23,12A11,11 0 0,1 12,23A11,11 0 0,1 1,12A11,11 0 0,1 12,1M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A9,9 0 0,0 21,12A9,9 0 0,0 12,3M12,5A7,7 0 0,1 19,12A7,7 0 0,1 12,19A7,7 0 0,1 5,12A7,7 0 0,1 12,5M12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7Z"></path>
+            </svg>
+          </span>
+          <input type="password" id="login-password" class="form-control" placeholder="Enter your password" required />
+          </div>
+        </div>
+        
+            <a class = "btn" class="btn btn-warning btn-block mb-3 " style= "text-decoration: none;" href="#0">Sign in</a>
+           
+            <a class="btn btn-wa mb-3" style= "text-decoration: none;"  href="#0">Forgot password?</a>
+          
+          </div>
+          <div class="google-signin text-center mt-3">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+          </div>
+      </div>
+      </div>
+    </form>
+    
+      
+</body>
+</html>

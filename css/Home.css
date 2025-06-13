@@ -1,0 +1,9 @@
+body {
+    background-color: #e8f5e9;
+    margin:0;
+   padding:0;
+
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
+

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+body {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 18px;
+  background: #e8f5e9;
+  color: #202125;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rating-wrapper {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 1em;
+  border-radius: 3px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.rating-wrapper .rating-label {
+  text-align: center;
+  font-weight: 700;
+  display: block;
+}
+.rating-wrapper .ratingItemList {
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+.rating-wrapper input.rating {
+  display: none;
+}
+.rating-wrapper label.rating {
+  padding: 5px 3px;
+  font-size: 32px;
+  opacity: 0.7;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+.rating-wrapper label.rating:hover {
+  filter: grayscale(0.84);
+  transform: scale(1.1);
+  transition: 100ms ease;
+}
+.rating-wrapper input.rating:checked + label.rating {
+  filter: grayscale(0);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.feedback {
+  width: 100%;
+  display: none;
+}
+.feedback textarea, .feedback input {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  font-family: "Lato", sans-serif;
+  border: 1px solid #d2d3d8;
+  border-radius: 3px;
+}
+.feedback textarea:focus, .feedback textarea:active, .feedback input:focus, .feedback input:active {
+  border-color: #3870c4;
+  box-shadow: 0px 0px 1px 1px #3870c4;
+  transition: 100ms;
+}
+.feedback textarea {
+  height: 100px;
+}
+.feedback button {
+  margin: 1em auto;
+  display: table;
+  text-align: center;
+}
+
+.disputelab_logo {
+  width: 140px;
+  position: absolute;
+  top: 1em;
+  left: 50%;
+  margin-left: -70px;
+}
+
+button {
+  color: #edeef0;
+  background-color: #9b9ea9;
+  border-radius: 3px;
+  font-family: "Lato", Arial sans-serif;
+  border: 0;
+  padding: 9px 15px;
+  font-size: 15px;
+}
+
+button.not-disabled {
+  color: white;
+  background-color: #3870c4;
+  text-shadow: 0px 1px 1px #214375;
+  cursor: pointer;
+}
+button.not-disabled:hover {
+  background-color: #2d599c;
+  transition: 100ms;
+}
